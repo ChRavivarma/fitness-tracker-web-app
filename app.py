@@ -114,7 +114,7 @@ if os.path.exists(progress_file):
 
 # Now plot the heatmap
     fig, ax = plt.subplots(figsize=(8, 4))
-    sns.heatmap(numeric_df, annot=True, cmap="coolwarm", ax=ax)
+    sns.heatmap(numeric_df, annot=True, cmap="coolwarm", fmt=".0f", ax=ax)
 
     st.pyplot(fig)
 else:
